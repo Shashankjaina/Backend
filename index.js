@@ -21,6 +21,11 @@ app.get('/youtube',(req,res)=>{
     res.send("<h2>shashankjaina</h2>");
 })
 
+app.get('/github',(req,res)=>{
+    res.json({user:"Joe"})
+})
+
+
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running on port ${process.env.PORT}`);
 })
